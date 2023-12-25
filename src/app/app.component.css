@@ -1,24 +1,25 @@
 footer{
     background-color: lightsalmon;
     padding: 20px 0;
-    position: absolute;
     bottom: 0;
+    position: relative;
     width: 100%;
+    height: auto;
+    overflow: auto;
 }
 
 nav{
     background-color: lightcoral;
 }
 .nav-item a {
+    color: black;
+    font-weight: bold;
     transition: all 0.3s ease-in-out;
 }
 .nav-item a:hover{
     color: blue;
     transform: scale(1.2);
 }
-.nav-link i{
-    transition: transform 0.3s ease-in-out;
-}
-.nav-link:hover i {
-    transform: scale(1.2);
+.container{
+    
 }
