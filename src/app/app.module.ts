@@ -1,16 +1,29 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule, provideClientHydration } from '@angular/platform-browser';
-
+import { HttpClientModule } from '@angular/common/http'
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { LaptopListComponentComponent } from './laptop-list-component/laptop-list-component.component';
+import { FormsModule } from '@angular/forms';
+import { CreateLaptopComponentComponent } from './create-laptop-component/create-laptop-component.component';
+import { UpdateLaptopComponentComponent } from './update-laptop-component/update-laptop-component.component';
+import { LaptopDetailsComponentComponent } from './laptop-details-component/laptop-details-component.component';
+import { ContactUsPageComponent } from './contact-us-page/contact-us-page.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LaptopListComponentComponent,
+    CreateLaptopComponentComponent,
+    UpdateLaptopComponentComponent,
+    LaptopDetailsComponentComponent,
+    ContactUsPageComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule
   ],
   providers: [
     provideClientHydration()
