@@ -10,6 +10,7 @@ import { UpdateLaptopComponentComponent } from './update-laptop-component/update
 import { LaptopDetailsComponentComponent } from './laptop-details-component/laptop-details-component.component';
 import { ContactUsPageComponent } from './contact-us-page/contact-us-page.component';
 import { SignInComponent } from './sign-in/sign-in.component';
+import { SignUpComponent } from './sign-up/sign-up.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { SignInComponent } from './sign-in/sign-in.component';
     UpdateLaptopComponentComponent,
     LaptopDetailsComponentComponent,
     ContactUsPageComponent,
-    SignInComponent
+    SignInComponent,
+    SignUpComponent
   ],
   imports: [
     BrowserModule,
