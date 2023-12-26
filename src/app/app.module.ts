@@ -9,6 +9,7 @@ import { CreateLaptopComponentComponent } from './create-laptop-component/create
 import { UpdateLaptopComponentComponent } from './update-laptop-component/update-laptop-component.component';
 import { LaptopDetailsComponentComponent } from './laptop-details-component/laptop-details-component.component';
 import { ContactUsPageComponent } from './contact-us-page/contact-us-page.component';
+import { SignInComponent } from './sign-in/sign-in.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { ContactUsPageComponent } from './contact-us-page/contact-us-page.compon
     CreateLaptopComponentComponent,
     UpdateLaptopComponentComponent,
     LaptopDetailsComponentComponent,
-    ContactUsPageComponent
+    ContactUsPageComponent,
+    SignInComponent
   ],
   imports: [
     BrowserModule,
