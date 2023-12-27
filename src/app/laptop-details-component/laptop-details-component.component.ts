@@ -8,7 +8,7 @@ import { LaptopService } from '../laptop.service';
   styleUrl: './laptop-details-component.component.css'
 })
 export class LaptopDetailsComponentComponent implements OnInit {
-  laptopId: number = 0;
+  laptopId!: number;
   laptop: Laptop = new Laptop;
 
   constructor(private route: ActivatedRoute, private laptopService: LaptopService) { }
