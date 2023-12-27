@@ -15,7 +15,6 @@ body {
     border-radius: 15px;
     border: none;
     box-shadow: 0 0 15px rgb(180, 51, 73);
-    /* background-color: gray; */
 }
 
 form {
@@ -47,18 +46,21 @@ textarea {
     border: none;
     background: rgb(235, 228, 228);
 }
-input[type=submit]{
+
+input[type=submit] {
     margin: 10px auto;
     width: 120px;
     background: rgb(216, 31, 62);
     color: white;
     cursor: pointer;
 }
-input[type=submit]:hover{
-background: tomato;
+
+input[type=submit]:hover {
+    background: tomato;
 }
+
 @media screen and (max-width:600px) {
-    .container{
+    .container {
         width: 90%;
     }
 }

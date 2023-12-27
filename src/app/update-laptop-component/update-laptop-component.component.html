@@ -1,38 +1,45 @@
-<div class="col-md-6 offset-md-3">
-    <h3> Update Laptop </h3>
-    <form (ngSubmit) = "onSubmit()">
-    
-        <div class="form-group">
-            <label> ID </label>
-            <input type="number" class ="form-control" id = "laptopId"
-                [(ngModel)] = "laptop.laptopId" name = "laptopId">
+<div class="container mt-5">
+    <div class="card mx-auto" style="max-width: 400px;">
+        <div class="card-header">
+            <h3 class="text-center mb-4">Update Laptop</h3>
         </div>
-    
-        <div class="form-group">
-            <label> Laptop Name </label>
-            <input type="text" class ="form-control" id = "laptopName"
-                [(ngModel)] = "laptop.laptopName" name = "laptopName">
-        </div>
-    
-        <div class="form-group">
-            <label> Laptop Price </label>
-            <input type="number" class ="form-control" id = "laptopPrice"
-                [(ngModel)] = "laptop.laptopPrice" name = "laptopPrice">
-        </div>
+        <div class="card-body">
 
-        <div class="form-group">
-            <label> Laptop Serail number </label>
-            <input type="number" class ="form-control" id = "laptopSerialNumber"
-                [(ngModel)] = "laptop.laptopSerialNumber" name = "laptopSerialNumber">
-        </div>
+            <form (ngSubmit)="onSubmit()">
+                <div class="mb-3">
+                    <label for="laptopId" class="form-label">ID</label>
+                    <input type="number" class="form-control" id="laptopId" [(ngModel)]="laptop.laptopId"
+                        name="laptopId">
+                </div>
 
-        <div class="form-group">
-            <label> Laptop Warranty Status </label>
-            <input type="text" class ="form-control" id = "laptopWarrantyStatus"
-                [(ngModel)] = "laptop.laptopWarrantyStatus" name = "laptopWarrantyStatus">
+                <div class="mb-3">
+                    <label for="laptopName" class="form-label">Laptop Name</label>
+                    <input type="text" class="form-control" id="laptopName" [(ngModel)]="laptop.laptopName"
+                        name="laptopName">
+                </div>
+
+                <div class="mb-3">
+                    <label for="laptopPrice" class="form-label">Laptop Price</label>
+                    <input type="number" class="form-control" id="laptopPrice" [(ngModel)]="laptop.laptopPrice"
+                        name="laptopPrice">
+                </div>
+
+                <div class="mb-3">
+                    <label for="laptopSerialNumber" class="form-label">Laptop Serial Number</label>
+                    <input type="number" class="form-control" id="laptopSerialNumber"
+                        [(ngModel)]="laptop.laptopSerialNumber" name="laptopSerialNumber">
+                </div>
+
+                <div class="mb-3">
+                    <label for="laptopWarrantyStatus" class="form-label">Laptop Warranty Status</label>
+                    <input type="text" class="form-control" id="laptopWarrantyStatus"
+                        [(ngModel)]="laptop.laptopWarrantyStatus" name="laptopWarrantyStatus">
+                </div>
+
+                <div class="text-center">
+                    <button class="btn btn-success" type="submit">Submit</button>
+                </div>
+            </form>
         </div>
-    
-        <button class = "btn btn-success" type ="submit">Submit</button>
-    
-    </form>
-    </div> 
+    </div>
+</div>
