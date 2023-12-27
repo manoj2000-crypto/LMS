@@ -12,23 +12,23 @@ export class LaptopService {
 
   constructor(private httpClient: HttpClient) { }
 
-  getLaptopsList(): Observable<Laptop[]>{
+  getLaptopsList(){
     return this.httpClient.get<Laptop[]>(`${this.baseURL}/readAllLaptop`);
   }
 
-  createLaptop(laptop: Laptop): Observable<Object>{
+  createLaptop(laptop: Laptop) {
     return this.httpClient.post(`${this.baseURL}/addLaptop`, laptop);
   }
 
-  getLaptopById(laptopId: number): Observable<Laptop>{
+  getLaptopById(laptopId: number){
     return this.httpClient.get<Laptop>(`${this.baseURL}/${laptopId}`);
   }
 
-  updateLaptop(laptopId: number,laptop: Laptop): Observable<Object>{
+  updateLaptop(laptopId: number,laptop: Laptop){
     return this.httpClient.put(`${this.baseURL}/updateLaptop/${laptopId}`, laptop);
   }
 
-  deleteLaptop(laptopId: number): Observable<Object>{
+  deleteLaptop(laptopId: number){
     return this.httpClient.delete(`${this.baseURL}/deleteLaptop/${laptopId}`);
   }
 

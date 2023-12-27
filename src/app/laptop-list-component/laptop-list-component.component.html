@@ -16,7 +16,7 @@
                 <td>{{ laptop.laptopName }}</td>
                 <td>{{ laptop.laptopPrice | currency:'INR':'symbol' }}</td>
                 <td>
-                    <button (click)="updateLaptop(laptop.laptopId)" class="btn btn-info btn-sm custom-button">
+                    <button (onClick)="updateLaptop(this.laptop.laptopId)" class="btn btn-info btn-sm custom-button">
                         Update
                     </button>
                     <button (click)="deleteLaptop(laptop.laptopId)" class="btn btn-danger btn-sm custom-button">
