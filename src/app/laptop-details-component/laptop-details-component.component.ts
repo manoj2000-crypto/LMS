@@ -14,7 +14,7 @@ export class LaptopDetailsComponentComponent implements OnInit {
   constructor(private route: ActivatedRoute, private laptopService: LaptopService) { }
 
   ngOnInit(): void {
-    this.laptopId = this.route.snapshot.params['laptopId'];
+    this.laptopId = this.route.snapshot.params['id'];
     this.laptop = new Laptop();
     this.laptopService.getLaptopById(this.laptopId).subscribe( data => { 
       this.laptop = data;

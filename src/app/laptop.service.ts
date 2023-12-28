@@ -16,7 +16,7 @@ export class LaptopService {
     return this.httpClient.get<Laptop[]>(`${this.baseURL}/readAllLaptop`);
   }
 
-  createLaptop(laptop: Laptop) {
+  createLaptop(laptop: Laptop): Observable<object> {
     return this.httpClient.post(`${this.baseURL}/addLaptop`, laptop);
   }
 

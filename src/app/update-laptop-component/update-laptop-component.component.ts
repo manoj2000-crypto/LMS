@@ -17,7 +17,7 @@ export class UpdateLaptopComponentComponent implements OnInit {
   { }
 
   ngOnInit(): void {
-    this.laptopId = this.route.snapshot.params['laptopId'];
+    this.laptopId = this.route.snapshot.params['id'];
     this.laptopService.getLaptopById(this.laptopId).subscribe(data => {
       this.laptop = data;
       console.log(this.laptop.laptopPrice);
